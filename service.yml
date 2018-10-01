@@ -17,8 +17,10 @@ spec:
           arguments:
           - name: IMAGE
             value: docker.io/brianmmcclain/knative-buildpack-demo:latest
+          - name: BUILDPACK_ORDER
+            value: https://github.com/projectriff/go-function-invoker.git
       revisionTemplate:
         spec:
           container:
-            image: docker.io/brianmmcclain/knative-buildoack-demo:latest
+            image: docker.io/brianmmcclain/knative-buildpack-demo:latest
             imagePullPolicy: Always
