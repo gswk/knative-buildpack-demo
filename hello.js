@@ -1,1 +1,1 @@
-module.exports = x => "Hello, " + x + "!"
+module.exports = x => "Hello, World!"
