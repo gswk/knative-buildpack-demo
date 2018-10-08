@@ -1,1 +1,1 @@
-module.exports = x => "Hello from Buildpacks!";
+module.exports = x => x ** 2;
