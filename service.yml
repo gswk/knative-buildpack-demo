@@ -10,15 +10,15 @@ spec:
         serviceAccountName: build-bot
         source:
           git:
-            url: https://github.com/BrianMMcClain/knative-buildpack-demo.git
+            url: https://github.com/gswk/knative-buildpack-demo.git
             revision: master
         template:
           name: buildpack
           arguments:
           - name: IMAGE
-            value: docker.io/brianmmcclain/knative-buildpack-demo:latest
+            value: docker.io/gswk/knative-buildpack-demo:latest
       revisionTemplate:
         spec:
           container:
-            image: docker.io/brianmmcclain/knative-buildpack-demo:latest
+            image: docker.io/gswk/knative-buildpack-demo:latest
             imagePullPolicy: Always
