@@ -2,7 +2,7 @@ const express = require('express');
 const app = express();
 
 app.get('/', function (req, res) {
-    res.send("Hello from Buildpacks!");
+    res.send("Hello from Buildpacks v1!");
 });
 
 var port = 8080;

@@ -6,17 +6,6 @@ metadata:
 spec:
   runLatest:
     configuration:
-      build:
-        serviceAccountName: build-bot
-        source:
-          git:
-            url: https://github.com/gswk/knative-buildpack-demo.git
-            revision: master
-        template:
-          name: buildpack
-          arguments:
-          - name: IMAGE
-            value: docker.io/gswk/knative-buildpack-demo:latest
       revisionTemplate:
         spec:
           container:

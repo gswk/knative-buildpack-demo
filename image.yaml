@@ -5,7 +5,7 @@ metadata:
 spec:
   serviceAccount: build-bot
   builderRef: buildpack-builder
-  image: docker.io/gswk/knative-buildpack-demo
+  image: docker.io/bryanfriedman/knative-buildpack-demo
   cacheSize: "1.5Gi"
   failedBuildHistoryLimit: 5
   successBuildHistoryLimit: 5
